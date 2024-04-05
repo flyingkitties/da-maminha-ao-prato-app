@@ -17,4 +17,10 @@
   .flexCenter {
     @apply flex items-center justify-center;
   }
+  .sectionContainer {
+    @apply px-5 md:px-[10%] xl:py-24 2xl:px-[14%];
+  }
+  .p-TextFormat {
+    @apply hyphens-auto text-justify text-sm font-light leading-loose xl:text-base 2xl:text-xl;
+  }
 }

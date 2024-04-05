@@ -11,6 +11,15 @@ const config: Config = {
       poppins: ['var(--font-poppins)'],
     },
     extend: {
+      colors: {
+        powder: '#BFD8D2',
+        peach: '#FEDCD2',
+        lightGreen: '#ebfed2',
+        lightPurple: '#d2dafe',
+        brown1: '#a9928c',
+        brown2: '#d3b7af',
+        greyScale: '#e8e8e8',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

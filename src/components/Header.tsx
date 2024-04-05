@@ -12,7 +12,7 @@ function Header() {
   const [nav, setNav] = useState<boolean>(false);
   const { links } = useNavigation();
   return (
-    <div className="sticky top-0 z-50 flex items-center justify-between p-2 px-5 md:px-10 text-black">
+    <div className="sticky top-0 z-50 flex items-center justify-between p-2 px-5 md:px-10 text-[#AD7A6B] bg-[#FFF9F1]">
       {/* Logo */}
       <div className="flexCenter">
         <Image
@@ -29,7 +29,7 @@ function Header() {
         onKeyDown={() => setNav(!nav)}
         role="button"
         tabIndex={0}
-        className="absolute right-5 z-30 lg:hidden"
+        className="absolute right-5 z-30 md:hidden"
       >
         {nav ? (
           <FaTimes className="h-7 w-auto xs:h-8" />
@@ -41,7 +41,7 @@ function Header() {
       {nav && (
         <div>
           <ul className="absolute left-0 top-0 z-20 flex h-screen w-full flex-col items-center justify-center text-center">
-            <div className="absolute bottom-0 left-0 right-0 z-30 h-[20%] bg-gradient-to-t from-primary/10 via-primary/5 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 z-30 h-[20%] bg-[#FFF9F1]" />
             {links.map(({ name, path, isActive }) => (
               <li
                 key={path}
@@ -63,7 +63,7 @@ function Header() {
         </div>
       )}
       {/* Nav - Desktop */}
-      <nav className=" lg:flexCenter hidden lg:text-base">
+      <nav className=" md:flexCenter hidden lg:text-base xl:text-lg">
         <ul className="flexCenter space-x-2 lg:space-x-5">
           {links.map(({ name, path, isActive }) => (
             <li key={path}>
