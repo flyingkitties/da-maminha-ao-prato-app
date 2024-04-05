@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Trocchi&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .titleFont {
+    font-family: 'Trocchi';
+  }
+  .handwritten {
+    font-family: 'Mrs Saint Delafield';
+  }
+}
 @layer components {
   .flexCenter {
     @apply flex items-center justify-center;
