@@ -14,14 +14,16 @@ function Header() {
   return (
     <div className="sticky top-0 z-50 flex items-center justify-between p-2 px-5 md:px-10 bg-primary">
       {/* Logo */}
-      <div className="flexCenter">
-        <Image
-          alt="Logo Da Maminha ao Prato"
-          src={logo}
-          height={50}
-          width={50}
-        />
-      </div>
+      <Link href="/">
+        <div className="flexCenter">
+          <Image
+            alt="Logo Da Maminha ao Prato"
+            src={logo}
+            height={50}
+            width={50}
+          />
+        </div>
+      </Link>
       {/* Nav */}
       <div
         aria-label="Menu"
@@ -70,8 +72,8 @@ function Header() {
               <Link
                 href={path}
                 className={cn(
-                  'cursor-pointer p-2 px-4 transition-all duration-75 ',
-                  isActive && 'text-terciary hover:text-terciary/70',
+                  'cursor-pointer p-2 px-4 transition-all duration-75  hover:text-terciary/70',
+                  isActive && 'text-terciary',
                 )}
               >
                 {name}

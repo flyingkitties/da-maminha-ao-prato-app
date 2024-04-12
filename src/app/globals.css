@@ -52,6 +52,6 @@ body {
     @apply w-5 h-auto text-terciary;
   }
   .bannerIconDiv {
-    @apply bg-white p-1 rounded-full;
+    @apply bg-primary p-1 rounded-full;
   }
 }

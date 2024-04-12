@@ -19,6 +19,7 @@ const config: Config = {
         primary: '#FDF5ED',
         secondary: '#F8D7C8',
         terciary: '#C66B4D',
+        darkBrown: '#6D5050',
       },
       backgroundImage: {},
     },
