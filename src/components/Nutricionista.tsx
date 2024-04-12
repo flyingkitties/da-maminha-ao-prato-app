@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import image1 from '@/../public/image-1.png';
+import image1 from '@/../public/image2.png';
 
 function Nutricionista() {
   return (
@@ -14,7 +14,7 @@ function Nutricionista() {
           />
         </div>
         <div className="flexCenter flex-col space-y-5 p-TextFormat lg:col-span-2">
-          <p className="font-semibold ">
+          <p className="font-semibold text-lg lg:text-xl text-terciary">
             Nutricionista materno-infantil especialista em amamentação.
           </p>
           <p className="">
