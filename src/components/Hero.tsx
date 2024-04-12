@@ -3,14 +3,14 @@ import React from 'react';
 import profile from '@/../public/profile7.png';
 function Hero() {
   return (
-    <div className="md:-mt-16 min-h-[80vh] bg-primary">
-      <div className="grid gap-8 md:gap-0 md:grid-cols-2 py-16 md:py-[10%] xl:px-[15%] md:px[5%] px-5">
+    <div className="bg-primary">
+      <div className="grid gap-8 md:gap-0 md:grid-cols-2 py-16 md:py-[15%] xl:px-[15%] md:px[5%] px-5">
         {/* Photo */}
         <div className="flexCenter z-10 md:hidden">
           <Image
             alt="Ana Keller profile image"
             src={profile}
-            className="w-full h-auto"
+            className="w-full h-auto px-5"
           />
         </div>
         {/* title */}

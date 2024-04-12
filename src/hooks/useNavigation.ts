@@ -20,8 +20,8 @@ const routes = [
     path: '/alimentacao-infantil',
   },
   {
-    name: 'Blog',
-    path: '/blog',
+    name: 'Agendar',
+    path: '/Agendar',
   },
 ];
 
