@@ -12,7 +12,7 @@ function Header() {
   const [nav, setNav] = useState<boolean>(false);
   const { links } = useNavigation();
   return (
-    <div className="sticky top-0 z-50 flex items-center justify-between p-2 px-5 md:px-10 text-[#AD7A6B] bg-[#FFF9F1]">
+    <div className="sticky top-0 z-50 flex items-center justify-between p-2 px-5 md:px-10 bg-primary">
       {/* Logo */}
       <div className="flexCenter">
         <Image
@@ -29,7 +29,7 @@ function Header() {
         onKeyDown={() => setNav(!nav)}
         role="button"
         tabIndex={0}
-        className="absolute right-5 z-30 md:hidden"
+        className="absolute right-5 z-30 lg:hidden"
       >
         {nav ? (
           <FaTimes className="h-7 w-auto xs:h-8" />
@@ -39,15 +39,15 @@ function Header() {
       </div>
       {/* Nav - Mobile */}
       {nav && (
-        <div>
-          <ul className="absolute left-0 top-0 z-20 flex h-screen w-full flex-col items-center justify-center text-center">
-            <div className="absolute bottom-0 left-0 right-0 z-30 h-[20%] bg-[#FFF9F1]" />
+        <div className="">
+          <ul className="absolute left-0 top-0 z-20 flex h-screen w-full flex-col items-center justify-center text-center bg-primary">
+            <div className="absolute bottom-0 left-0 right-0 z-30 h-[20%]" />
             {links.map(({ name, path, isActive }) => (
               <li
                 key={path}
                 className={cn(
                   'cursor-pointer px-4 py-6 text-4xl capitalize',
-                  isActive && 'text-primary',
+                  isActive && 'text-terciary hover:text-terciary/70',
                 )}
               >
                 <Link
@@ -63,7 +63,7 @@ function Header() {
         </div>
       )}
       {/* Nav - Desktop */}
-      <nav className=" md:flexCenter hidden lg:text-base xl:text-lg">
+      <nav className=" lg:flexCenter hidden lg:text-base xl:text-lg">
         <ul className="flexCenter space-x-2 lg:space-x-5">
           {links.map(({ name, path, isActive }) => (
             <li key={path}>
@@ -71,7 +71,7 @@ function Header() {
                 href={path}
                 className={cn(
                   'cursor-pointer p-2 px-4 transition-all duration-75 ',
-                  isActive && 'text-primary hover:text-primary/70',
+                  isActive && 'text-terciary hover:text-terciary/70',
                 )}
               >
                 {name}

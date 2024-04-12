@@ -12,19 +12,15 @@ const config: Config = {
     },
     extend: {
       colors: {
-        powder: '#BFD8D2',
-        peach: '#FEDCD2',
-        lightGreen: '#ebfed2',
-        lightPurple: '#d2dafe',
-        brown1: '#a9928c',
-        brown2: '#d3b7af',
-        greyScale: '#e8e8e8',
+        // primary: '#F5C767',
+        // secondary: '#75B4BC',
+        // primaryLight: '#F9D99E',
+        // secondaryLight: '#8DCAC9',
+        primary: '#FDF5ED',
+        secondary: '#F8D7C8',
+        terciary: '#C66B4D',
       },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      backgroundImage: {},
     },
   },
   plugins: [],
