@@ -13,9 +13,9 @@ function Services() {
             Os meus serviços
           </h1>
           <div>
-            {servicos.map((service) => (
+            {/* {servicos.map((service) => (
               <Tile key={service} />
-            ))}
+            ))} */}
           </div>
         </div>
       </div>
