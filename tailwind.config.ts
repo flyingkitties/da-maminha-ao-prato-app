@@ -16,9 +16,12 @@ const config: Config = {
         // secondary: '#75B4BC',
         // primaryLight: '#F9D99E',
         // secondaryLight: '#8DCAC9',
+        // prev secondary #F8D7C8
+
         primary: '#FDF5ED',
-        secondary: '#F8D7C8',
+        secondary: '#EDCAB7',
         terciary: '#C66B4D',
+        lightBrown: '#A08175',
         darkBrown: '#6D5050',
       },
       backgroundImage: {},

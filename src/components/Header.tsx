@@ -12,7 +12,7 @@ function Header() {
   const [nav, setNav] = useState<boolean>(false);
   const { links } = useNavigation();
   return (
-    <div className="sticky top-0 z-50 flex items-center justify-between p-2 px-5 md:px-10 bg-primary">
+    <div className="sticky top-0 z-50 flex items-center justify-between p-2 px-5 md:px-10 bg-primary text-darkBrown">
       {/* Logo */}
       <Link href="/">
         <div className="flexCenter">
