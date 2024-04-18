@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <main>
       <Hero2 />
-      {/* <Agendar />
+      <Agendar />
       <Nutricionista />
-      <Footer /> */}
+      <Footer />
     </main>
   );
 }

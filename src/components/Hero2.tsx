@@ -45,9 +45,19 @@ function Hero2() {
   });
 
   return (
-    <div className="relative">
-      <div className="flexCenter overflow-x-hidden">
+    <div className="relative h-[300px] md:h-[600px] ">
+      <div className="absolute top-0 left-0 right-0 bottom-0 flexCenter overflow-x-hidden">
         <Blob svg={props.svg} />
+      </div>
+      <div className="absolute top-0 left-0 right-0 bottom-0 z-10 ">
+        <div className="flexCenter flex-col h-full text-center">
+          <h1 className="titleFont text-terciary text-4xl md:text-4xl lg:text-5xl xl:text-7xl">
+            Da Maminha Ao Prato
+          </h1>
+          <h2 className="handwritten text-darkBrown text-xl md:text-xl lg:text-2xl">
+            Ana van der Kellen
+          </h2>
+        </div>
       </div>
     </div>
   );
