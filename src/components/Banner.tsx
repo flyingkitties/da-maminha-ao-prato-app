@@ -10,14 +10,14 @@ function Banner() {
         <div className="flexCenter space-x-5 ">
           {/* Phone */}
 
-          <div className="bannerIconDiv p-[6px]">
+          <div className="bannerIconDiv p-[6px] element">
             <FaPhone className="bannerIcon w-4 h-auto" />
           </div>
 
-          <div className="bannerIconDiv">
+          <div className="bannerIconDiv element">
             <PiInstagramLogoFill className="bannerIcon " />
           </div>
-          <div className="bannerIconDiv">
+          <div className="bannerIconDiv element">
             <FaFacebook className="bannerIcon" />
           </div>
         </div>

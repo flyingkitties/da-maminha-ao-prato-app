@@ -29,6 +29,13 @@ body {
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
+.element {
+  align-items: center;
+
+  box-shadow: -3px -3px 4px rgba(252, 251, 251, 0.25),
+    3px 3px 4px rgba(121, 117, 117, 0.3);
+}
+
 @layer base {
   .titleFont {
     font-family: 'Trocchi';
@@ -37,6 +44,15 @@ body {
     font-family: 'Mrs Saint Delafield';
   }
 }
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
 @layer components {
   .flexCenter {
     @apply flex items-center justify-center;
@@ -54,5 +70,10 @@ body {
   }
   .bannerIconDiv {
     @apply bg-primary p-1 rounded-full;
+  }
+
+  /* Footer */
+  .contact {
+    @apply flex items-center text-[10px] xl:text-[12px] space-x-2;
   }
 }

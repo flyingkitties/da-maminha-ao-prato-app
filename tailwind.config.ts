@@ -11,6 +11,25 @@ const config: Config = {
       poppins: ['var(--font-poppins)'],
     },
     extend: {
+      animation: {
+        blob: 'blob 7s infinite',
+      },
+      keyframes: {
+        blob: {
+          '0%': {
+            transform: 'translate(0px, 0px) scale(1)',
+          },
+          '33%': {
+            transform: 'translate(20px, -20px) scale(1.1)',
+          },
+          '66%': {
+            transform: 'translate(-40px, 30px) scale(0.9)',
+          },
+          '100%': {
+            transform: 'tranlate(20px, -10px) scale(1)',
+          },
+        },
+      },
       colors: {
         // primary: '#F5C767',
         // secondary: '#75B4BC',
@@ -20,7 +39,8 @@ const config: Config = {
 
         primary: '#FDF5ED',
         secondary: '#EDCAB7',
-        terciary: '#C66B4D',
+        terciary: '#A77166',
+        // '#C66B4D',
         lightBrown: '#A08175',
         darkBrown: '#6D5050',
       },
