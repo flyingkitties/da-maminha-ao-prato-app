@@ -7,6 +7,7 @@ import logo from '@/../public/logo/Logo-2.png';
 import useNavigation from '@/hooks/useNavigation';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Link from 'next/link';
+import wave from '../../public/waveBottom.png';
 
 function Header() {
   const [nav, setNav] = useState<boolean>(false);
@@ -42,13 +43,20 @@ function Header() {
       {/* Nav - Mobile */}
       {nav && (
         <div>
-          <ul className="absolute left-0 top-0 z-20 flex h-screen w-full flex-col items-center justify-center bg-primary md:space-y-10 pb-20 md:pb-28">
-            <div className="absolute bottom-0 left-0 right-0 z-30 h-[20%] boxTop bg-secondary" />
+          <ul className="absolute left-0 top-0 z-20 flex h-screen w-full flex-col items-center justify-center bg-white md:space-y-10 pb-20 md:pb-28">
+            <div className="absolute bottom-0 left-0 right-0 z-30 h-[20%]">
+              <Image
+                src={wave}
+                alt="wave styling"
+                className="w-full "
+              />
+              <div className="bg-secondary h-full" />
+            </div>
             {links.map(({ name, path, isActive }) => (
               <li
                 key={path}
                 className={cn(
-                  'cursor-pointer px-4 py-6 text-2xl md:text-4xl capitalize hover:text-terciary/70',
+                  'cursor-pointer px-4 py-6 text-2xl capitalize hover:text-terciary/70',
                   isActive && 'text-terciary ',
                 )}
               >

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import image1 from '@/../public/image3.png';
+import image1 from '@/../public/profile/profile-image1.png';
 
 function Nutricionista() {
   return (

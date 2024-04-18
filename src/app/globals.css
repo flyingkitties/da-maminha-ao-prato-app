@@ -9,26 +9,7 @@ body {
   background-color: '#FEFBF6';
   color: '#6D5050';
 }
-.box {
-  --mask: radial-gradient(
-        111.8px at 50% calc(100% - 150px),
-        #000 99%,
-        #0000 101%
-      )
-      calc(50% - 100px) 0/200px 100%,
-    radial-gradient(111.8px at 50% calc(100% + 100px), #0000 99%, #000 101%) 50%
-      calc(100% - 50px) / 200px 100% repeat-x;
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
-}
-.boxTop {
-  --mask: radial-gradient(111.8px at 50% 150px, #000 99%, #0000 101%)
-      calc(50% - 100px) 0/200px 100%,
-    radial-gradient(111.8px at 50% -100px, #0000 99%, #000 101%) 50% 50px/200px
-      100% repeat-x;
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
-}
+
 .element {
   align-items: center;
 
