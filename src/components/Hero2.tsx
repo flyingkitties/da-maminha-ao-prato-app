@@ -8,6 +8,7 @@ import profile from '@/../public/profileHero2.png';
 import blobs from 'blobs';
 import Blob from './Blob';
 import { useSpring, animated } from 'react-spring';
+import Blob2 from './Blob2';
 
 const options = {
   complexity: 0.3,
@@ -20,6 +21,8 @@ const options = {
 function Hero2() {
   const [blob, setBlob] = useState(blobs.editable(options));
   const [scrollY, setScrollY] = useState(0);
+  const [prevScrollY, setPrevScrollY] = useState(0);
+  const threshold = 30; // Adjust this value to control the threshold for blob change
 
   const handleScroll = () => {
     setScrollY(window.scrollY);
@@ -35,28 +38,33 @@ function Hero2() {
   }, []);
 
   useEffect(() => {
-    // Update the blob SVG based on scroll position
-    const newBlob = blobs.editable(options);
-    setBlob(newBlob);
+    // Update the blob SVG only if the scroll position crosses the threshold
+    if (Math.abs(scrollY - prevScrollY) >= threshold) {
+      const newBlob = blobs.editable(options);
+      setBlob(newBlob);
+      setPrevScrollY(scrollY);
+    }
   }, [scrollY]);
 
   const props = useSpring({
     svg: blob.children[0].children[0].attributes.d,
   });
-
   return (
-    <div className="relative h-[300px] md:h-[600px] ">
-      <div className="absolute top-0 left-0 right-0 bottom-0 flexCenter overflow-x-hidden">
+    <div className="relative h-[80vh] flexCenter ">
+      <div className="absolute top-0 left-0 right-0 bottom-0 overflow-x-hidden">
         <Blob svg={props.svg} />
       </div>
-      <div className="absolute top-0 left-0 right-0 bottom-0 z-10 ">
-        <div className="flexCenter flex-col h-full text-center">
+      <div className="absolute top-0 left-0 right-0 bottom-0 z-10">
+        <div className="flex items-center pt-[40%] md:pt-[30%] flex-col h-full text-center space-y-5 ">
           <h1 className="titleFont text-terciary text-4xl md:text-4xl lg:text-5xl xl:text-7xl">
             Da Maminha Ao Prato
           </h1>
           <h2 className="handwritten text-darkBrown text-xl md:text-xl lg:text-2xl">
             Ana van der Kellen
           </h2>
+        </div>
+        <div className="bg-white absolute left-5 right-5 bottom-[20%] z-10 text-4xl md:text-4xl lg:text-5xl xl:text-7xl rounded-md shadow-lg text-center">
+          <h2>Nutrição Materno-infantil e Amamentação</h2>
         </div>
       </div>
     </div>
