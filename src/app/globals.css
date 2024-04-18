@@ -57,4 +57,13 @@ body {
   .contact {
     @apply flex items-center text-[10px] xl:text-[12px] space-x-2;
   }
+  .footerIcon {
+    @apply text-terciary w-4 h-auto;
+  }
+  .termsAndprivacyBox {
+    @apply flex justify-center p-5 text-xs px-5 md:px-[10%] 2xl:px-[20%] space-x-2;
+  }
+  .copyright {
+    @apply flex justify-center items-center px-5 text-[9px] border-t-[0.4px] border-gray-400 py-5;
+  }
 }
