@@ -56,7 +56,7 @@ function Header() {
               <li
                 key={path}
                 className={cn(
-                  'cursor-pointer px-4 py-6 text-2xl capitalize hover:text-terciary/70',
+                  'cursor-pointer px-4 py-6 text-2xl md:text-3xl capitalize hover:text-terciary/70',
                   isActive && 'text-terciary ',
                 )}
               >

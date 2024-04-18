@@ -62,8 +62,10 @@ function Hero() {
             Ana van der Kellen
           </h2>
         </div>
-        <div className="absolute left-5 right-5 bottom-[15%] md:bottom-[25%] z-10 text-xl md:text-2xl lg:text-3xl  text-center text-terciary">
-          <h2>Nutrição Materno-infantil e Amamentação</h2>
+        <div className="absolute left-5 right-5 bottom-[20%] md:bottom-[25%] z-10 ">
+          <h2 className="text-xl md:text-2xl lg:text-3xl text-center text-terciary  md:px-[20%]">
+            Nutrição Materno-infantil e Amamentação
+          </h2>
         </div>
       </div>
     </div>
