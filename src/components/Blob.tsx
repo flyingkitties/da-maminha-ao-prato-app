@@ -7,7 +7,7 @@ function Blob({ svg }: any) {
   return (
     <svg
       viewBox="0 0 600 600"
-      className="ml-[10%] w-full "
+      className="ml-[5%] w-full h-full"
       width="600"
       fill="#EDCAB7"
     >
