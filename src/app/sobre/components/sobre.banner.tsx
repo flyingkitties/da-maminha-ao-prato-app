@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import about from '@/../public/image-about.png';
 
 function Banner() {
   return (
@@ -10,11 +9,11 @@ function Banner() {
           Sobre Da Maminha ao Prato
         </h1>
         <div className="grid md:grid-cols-2 gap-5 my-10">
-          <Image
+          {/* <Image
             src={about}
             alt="profile image"
             className=""
-          />
+          /> */}
           <div className="p-TextFormat space-y-5">
             <p>
               O meu nome é Ana van der Kellen, sou nutricionista-materno

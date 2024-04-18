@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import about2 from '@/../public/image-about-2.png';
 
 function AboutMe() {
   return (
@@ -38,11 +37,11 @@ function AboutMe() {
               alimentares saudáveis.
             </p>
           </div>
-          <Image
+          {/* <Image
             src={about2}
             alt="profile image"
             className=""
-          />
+          /> */}
         </div>
         <div className="p-TextFormat space-y-5">
           <p>
