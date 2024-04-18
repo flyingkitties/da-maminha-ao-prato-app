@@ -5,7 +5,7 @@ import { SvgBlob } from 'react-svg-blob';
 
 import { getRandomColor, getRandomInt, getRandomPattern } from '../utils/utils';
 
-function Blob2(svg) {
+function Blob2(svg: any) {
   const [previousShapeProps, setPreviousShapeProps] = useState({
     growth: getRandomInt(1, 2),
     edges: getRandomInt(2, 5),
