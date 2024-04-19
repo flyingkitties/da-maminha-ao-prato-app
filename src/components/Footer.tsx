@@ -8,85 +8,71 @@ import Link from 'next/link';
 
 function Footer() {
   return (
-    <div className=" bg-secondary">
-      <div className="grid md:grid-cols-2 py-[10%]">
-        {/* Logo */}
-        <div className="flexCenter">
-          <Image
-            alt="Logo Da Maminha ao Prato"
-            src={logo}
-            className="w-[100px] h-auto"
-          />
-        </div>
-        {/* Info */}
-        <div className="">
-          {/* Hora de atendimento */}
-          <div className="contact">
-            <div className="bannerIconDiv p-[6px] bg-secondary element">
+    <div>
+      <div className="sectionContainer">
+        <div className="grid md:grid-cols-2 py-[10%] md:py-[5%]">
+          {/* Logo */}
+          <div className="flexCenter">
+            <Image
+              alt="Logo Da Maminha ao Prato"
+              src={logo}
+              className="w-[100px] h-auto"
+            />
+          </div>
+          {/* Info */}
+          <div className="space-y-2 pt-10 md:pt-0 px-[10%]">
+            {/* Hora de atendimento */}
+            <div className="contact">
               <FaRegClock className="footerIcon" />
+
+              <p>Segunda a Sexta das 09:00-17:00</p>
             </div>
-            <p>Segunda a Sexta das 09:00-17:00</p>
-          </div>
-          {/* Telefone */}
-          <div className="contact">
-            <div className="bannerIconDiv p-[6px] bg-secondary element">
+            {/* Telefone */}
+            <div className="contact">
               <FaPhone className="footerIcon" />
+
+              <p>+351 935 058 203</p>
             </div>
-            <p>+351 935 058 203</p>
-          </div>
-          {/* Morada */}
-          <div className="contact">
-            <div className="bannerIconDiv p-[6px] bg-secondary element">
+            {/* Morada */}
+            <div className="contact">
               <FaLocationDot className="footerIcon" />
+
+              <p>Rua Blah blah blah</p>
             </div>
-            <p>Rua Blah blah blah</p>
-          </div>
-          {/* Email */}
-          <div className="contact">
-            <div className="bannerIconDiv p-[6px] bg-secondary element">
+            {/* Email */}
+            <div className="contact">
               <FaEnvelope className="footerIcon" />
+
+              <p>damaminhaaoprato@outlook.pt</p>
             </div>
-            <p>damaminhaaoprato@outlook.pt</p>
           </div>
         </div>
-      </div>
 
-      <div className="flex items-center justify-center py-5">
-        {/* Socials */}
-        <nav className="flex items-center justify-center space-x-5">
-          <Link
-            href="https://www.facebook.com/atelierdarelacao"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="socialsRing"
-            aria-label="o nosso facebook"
-          >
-            <FaFacebook className="footerSocials" />
+        <div className="flex items-center justify-center pb-5">
+          {/* Socials */}
+          <div className="flexCenter space-x-5 ">
+            <div className="bannerIconDiv bg-white">
+              <PiInstagramLogoFill className="bannerIcon" />
+            </div>
+            <div className="bannerIconDiv bg-white">
+              <FaFacebook className="bannerIcon" />
+            </div>
+          </div>
+        </div>
+        {/* Terms and privacy */}
+        <div className="termsAndprivacyBox">
+          <Link href="/termos-e-condicoes">
+            <p className="sm:px-5">Termos e Condições</p>
           </Link>
-          <Link
-            href="https://www.instagram.com/atelierdarelacao"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="socialsRing"
-            aria-label="o nosso instagram"
-          >
-            <PiInstagramLogoFill className="footerSocials" />
+          <p>|</p>
+          <Link href="/politica-de-privacidade">
+            <p className="sm:px-5">Política de Privacidade</p>
           </Link>
-        </nav>
-      </div>
-      {/* Terms and privacy */}
-      <div className="termsAndprivacyBox">
-        <Link href="/termos-e-condicoes">
-          <p className="sm:px-5">Termos e Condições</p>
-        </Link>
-        <p>|</p>
-        <Link href="/politica-de-privacidade">
-          <p className="sm:px-5">Política de Privacidade</p>
-        </Link>
+        </div>
       </div>
       {/* Copyright */}
       <div className="copyright">
-        <p>Copyright © 2024 Atelier da Relação</p>
+        <p>Copyright © 2024 Da Maminha Ao Prato</p>
       </div>
     </div>
   );

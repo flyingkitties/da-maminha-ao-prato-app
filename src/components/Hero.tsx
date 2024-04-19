@@ -62,7 +62,7 @@ function Hero() {
           <h1 className="titleFont text-terciary text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
             Da Maminha Ao Prato
           </h1>
-          <h2 className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl text-center text-darkBrown px-[5%] xs:px-[10%] md:px-[3%] ">
+          <h2 className="text-sm xs:text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-center text-darkBrown px-[5%] xs:px-[10%] md:px-[3%] ">
             Nutrição Materno-infantil e Amamentação
           </h2>
         </div>
@@ -80,7 +80,7 @@ function Hero() {
               <FaFacebook className="bannerIcon" />
             </div>
           </div>
-          <div className="flexCenter pt-[5%] lg:pt-[2%]">
+          <div className="flexCenter pt-[5%] lg:pt-10">
             <h2 className="handwritten text-xl md:text-2xl xl:text-3xl text-darkBrown ">
               Ana van der Kellen
             </h2>
