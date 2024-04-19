@@ -4,17 +4,17 @@ import image1 from '@/../public/profile/profile-image1.png';
 
 function Nutricionista() {
   return (
-    <div className="flexCenter sectionContainer text-darkBrown pb-[10%]">
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 sm:py-[10%] gap-5 lg:gap-10">
+    <div className="flexCenter sectionContainer text-darkBrown py-16">
+      <div className="grid md:grid-cols-2 sm:py-[5%] gap-5 lg:gap-10">
         <div className="flexCenter">
           <Image
             alt="Ana Kellen photo"
             src={image1}
-            className="w-full h-auto"
+            className="w-full h-auto px-[15%] sm:px-0 lg:px-[5%]"
           />
         </div>
-        <div className="flexCenter flex-col space-y-5  lg:col-span-2 px-[5%]">
-          <p className="font-semibold text-lg lg:text-xl text-terciary titleFont text-center md:text-left">
+        <div className="flexCenter flex-col space-y-5 lg:space-y-10">
+          <p className="font-semibold text-lg lg:text-xl xl:text-2xl text-terciary titleFont text-center md:text-left">
             Nutricionista materno-infantil especialista em amamentação.
           </p>
           <p className="p-TextFormat">
