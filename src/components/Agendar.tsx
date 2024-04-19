@@ -5,8 +5,8 @@ import wave from '../../public/wave.png';
 function Agendar() {
   return (
     <div className="">
-      <div className="flexCenter flex-col space-y-5 py-[5%] pb-[2%] px-5 bg-secondary ">
-        <h3 className="text-lg md:text-xl text-center text-darkBrown">
+      <div className="flexCenter flex-col space-y-5 py-5 sm:py-[5%] sm:pb-[2%] px-5 bg-secondary ">
+        <h3 className="text-sm sm:text-base md:text-lg xl:text-xl text-center text-darkBrown">
           Queres agendar uma consulta de Amamentação?
         </h3>
         <button

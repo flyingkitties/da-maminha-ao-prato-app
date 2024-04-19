@@ -81,7 +81,7 @@ function Hero() {
             </div>
           </div>
           <div className="flexCenter pt-[5%] lg:pt-[2%]">
-            <h2 className="handwritten text-xl md:text-2xl xl:text-3xl text-terciary ">
+            <h2 className="handwritten text-xl md:text-2xl xl:text-3xl text-darkBrown ">
               Ana van der Kellen
             </h2>
           </div>
