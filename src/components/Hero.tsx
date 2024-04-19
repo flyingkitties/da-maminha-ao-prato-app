@@ -51,18 +51,18 @@ function Hero() {
     svg: blob.children[0].children[0].attributes.d,
   });
   return (
-    <div className="relative h-[90vh] flexCenter -mt-10 md:mt-0">
+    <div className="relative h-[90vh] flexCenter">
       {/* Blob */}
       <div className="absolute -top-10 left-0 right-0 bottom-0 overflow-x-hidden">
         <Blob svg={props.svg} />
       </div>
       {/* Info */}
       <div className="z-10">
-        <div className="flex items-center flex-col h-full text-center space-y-[25%] sm:space-y-[15%] md:space-y-[40%] lg:space-y-[50%] px-[10%] md:px-[15%] lg:px-[15%]">
+        <div className="flex items-center flex-col h-full text-center space-y-[25%] sm:space-y-[30%] md:space-y-[40%] lg:space-y-[30%] px-[10%] md:px-[15%] lg:px-[15%]">
           <h1 className="titleFont text-terciary text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
             Da Maminha Ao Prato
           </h1>
-          <h2 className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl text-center text-darkBrown px-[5%] xs:px-[10%] md:px-[5%] lg:px-[3%]">
+          <h2 className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl text-center text-darkBrown px-[5%] xs:px-[10%] md:px-[3%] ">
             Nutrição Materno-infantil e Amamentação
           </h2>
         </div>
@@ -80,8 +80,8 @@ function Hero() {
               <FaFacebook className="bannerIcon" />
             </div>
           </div>
-          <div className="flexCenter pt-[5%]">
-            <h2 className="handwritten text-xl md:text-2xl lg:text-3xl xl:4xl text-terciary ">
+          <div className="flexCenter pt-[5%] lg:pt-[2%]">
+            <h2 className="handwritten text-xl md:text-2xl xl:text-3xl text-terciary ">
               Ana van der Kellen
             </h2>
           </div>
