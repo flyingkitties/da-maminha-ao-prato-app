@@ -10,6 +10,15 @@ const config: Config = {
     fontFamily: {
       poppins: ['var(--font-poppins)'],
     },
+    screens: {
+      xxs: '320px',
+      xs: '425px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1836px',
+    },
     extend: {
       animation: {
         blob: 'blob 7s infinite',

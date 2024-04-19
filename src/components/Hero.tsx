@@ -8,6 +8,8 @@ import profile from '@/../public/profileHero2.png';
 import blobs from 'blobs';
 import Blob from './Blob';
 import { useSpring, animated } from 'react-spring';
+import { FaFacebook, FaPhone } from 'react-icons/fa';
+import { PiInstagramLogoFill } from 'react-icons/pi';
 
 const options = {
   complexity: 0.3,
@@ -49,23 +51,40 @@ function Hero() {
     svg: blob.children[0].children[0].attributes.d,
   });
   return (
-    <div className="relative h-[80vh] lg:h-[85vh] flexCenter">
-      <div className="absolute top-0 left-0 right-0 bottom-0 overflow-x-hidden">
+    <div className="relative h-[90vh] flexCenter -mt-10 md:mt-0">
+      {/* Blob */}
+      <div className="absolute -top-10 left-0 right-0 bottom-0 overflow-x-hidden">
         <Blob svg={props.svg} />
       </div>
-      <div className="absolute top-[35%] left-0 right-0 bottom-0 z-10">
-        <div className="flex items-center flex-col h-full text-center space-y-5 px-[10%]">
-          <h1 className="titleFont text-terciary text-4xl md:text-5xl lg:text-5xl xl:text-7xl">
+      {/* Info */}
+      <div className="z-10">
+        <div className="flex items-center flex-col h-full text-center space-y-[25%] sm:space-y-[15%] md:space-y-[40%] lg:space-y-[50%] px-[10%] md:px-[15%] lg:px-[15%]">
+          <h1 className="titleFont text-terciary text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
             Da Maminha Ao Prato
           </h1>
-          <h2 className="handwritten text-darkBrown text-xl md:text-2xl xl:text-3xl">
-            Ana van der Kellen
-          </h2>
-        </div>
-        <div className="absolute left-5 right-5 bottom-[20%] md:bottom-[25%] z-10 ">
-          <h2 className="text-xl md:text-2xl lg:text-3xl text-center text-terciary  md:px-[20%]">
+          <h2 className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl text-center text-darkBrown px-[5%] xs:px-[10%] md:px-[5%] lg:px-[3%]">
             Nutrição Materno-infantil e Amamentação
           </h2>
+        </div>
+        <div className="absolute left-5 right-5 bottom-[10%] md:bottom-[5%] z-10">
+          {/* Socials */}
+          <div className="flexCenter space-x-5 ">
+            {/* Phone */}
+            <div className="bannerIconDiv p-[6px] xl:p-[10px]">
+              <FaPhone className="bannerIcon w-4 xl:w-6 h-auto" />
+            </div>
+            <div className="bannerIconDiv">
+              <PiInstagramLogoFill className="bannerIcon " />
+            </div>
+            <div className="bannerIconDiv">
+              <FaFacebook className="bannerIcon" />
+            </div>
+          </div>
+          <div className="flexCenter pt-[5%]">
+            <h2 className="handwritten text-xl md:text-2xl lg:text-3xl xl:4xl text-terciary ">
+              Ana van der Kellen
+            </h2>
+          </div>
         </div>
       </div>
     </div>

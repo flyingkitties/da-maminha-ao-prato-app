@@ -47,10 +47,10 @@ body {
 
   /* Banner */
   .bannerIcon {
-    @apply w-5 h-auto text-terciary;
+    @apply w-5 xl:w-7 h-auto text-terciary;
   }
   .bannerIconDiv {
-    @apply bg-primary p-1 rounded-full;
+    @apply bg-secondary p-1 xl:p-2 rounded-full;
   }
 
   /* Footer */

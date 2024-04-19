@@ -9,15 +9,14 @@ function Banner() {
       <div className="flex flex-col md:flex-row justify-end items-center md:col-span-2 text-[10px] sm:text-xs lg:text-sm space-y-3">
         <div className="flexCenter space-x-5 ">
           {/* Phone */}
-
-          <div className="bannerIconDiv p-[6px] element">
+          <div className="bannerIconDiv p-[6px]">
             <FaPhone className="bannerIcon w-4 h-auto" />
           </div>
 
-          <div className="bannerIconDiv element">
+          <div className="bannerIconDiv">
             <PiInstagramLogoFill className="bannerIcon " />
           </div>
-          <div className="bannerIconDiv element">
+          <div className="bannerIconDiv">
             <FaFacebook className="bannerIcon" />
           </div>
         </div>
