@@ -15,7 +15,8 @@ function ServicesGallery() {
           <div className="grid grid-cols-3 gap-16 my-20">
             {services.map((service: Services) => (
               <Tile
-                key={service.title}
+                id={service.id}
+                key={service.id}
                 title={service.title}
                 image={service.image}
                 priceOnline={service.priceOnline}
