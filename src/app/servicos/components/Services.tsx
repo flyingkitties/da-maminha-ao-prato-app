@@ -12,13 +12,12 @@ function ServicesGallery() {
           <h1 className="text-center titleFont text-terciary text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
             Os meus serviços
           </h1>
-          <div>
+          <div className="grid grid-cols-3 gap-16 my-20">
             {services.map((service: Services) => (
               <Tile
                 key={service.title}
                 title={service.title}
                 image={service.image}
-                alt={service.title}
                 priceOnline={service.priceOnline}
                 priceHome={service.priceHome}
               />
