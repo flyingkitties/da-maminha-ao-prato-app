@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
+import image1 from '../../../../public/image1.png';
 
 function AboutMe() {
   return (
-    <div className="bg-primary px-5 md:px-[5%] xl:px-[10%]">
+    <div className="px-5 md:px-[5%] xl:px-[10%]">
       <div className="py-10">
         <h2 className="text-center titleFont text-terciary text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
           O que podes esperar de mim
@@ -37,11 +38,11 @@ function AboutMe() {
               alimentares saudáveis.
             </p>
           </div>
-          {/* <Image
-            src={about2}
+          <Image
+            src={image1}
             alt="profile image"
             className=""
-          /> */}
+          />
         </div>
         <div className="p-TextFormat space-y-5">
           <p>
