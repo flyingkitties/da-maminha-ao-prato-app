@@ -7,14 +7,15 @@ import Link from 'next/link';
 
 function Tile({ id, image, title, priceOnline, priceHome }: Services) {
   return (
-    <div className="relative shadow-md rounded-lg min-w-72 border-2 border-secondary bg-white ">
+    <div className="relative shadow-md rounded-lg lg:min-w-72 border-2 border-secondary bg-white ">
       {/* Icon */}
-      <div className="absolute -top-[40px] left-[35%] border border-secondary rounded-full p-3 bg-secondary">
+      <div className="absolute -top-[40px] left-0 right-0 flexCenter ">
         <Image
           src={image}
           alt={title}
-          height={50}
-          width={50}
+          height={70}
+          width={70}
+          className="border border-secondary rounded-full p-3 bg-secondary"
         />
       </div>
       {/* Content */}
