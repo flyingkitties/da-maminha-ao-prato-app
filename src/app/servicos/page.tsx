@@ -5,8 +5,8 @@ import Pacotes from './components/Pacotes';
 function page() {
   return (
     <div>
-      <Services />
       <Pacotes />
+      <Services />
     </div>
   );
 }
