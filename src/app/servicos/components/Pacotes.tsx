@@ -10,16 +10,30 @@ function Pacotes() {
         Pacotes
       </h1>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20">
-        {packages.map(({ id, title, prevPrice, price, list }: Packages) => (
-          <PackagesTile
-            id={id}
-            key={id}
-            title={title}
-            prevPrice={prevPrice}
-            price={price}
-            list={list}
-          />
-        ))}
+        {packages.map(
+          ({
+            id,
+            title,
+            prevPrice,
+            price,
+            list,
+            color,
+            borderColor,
+            textColor,
+          }: Packages) => (
+            <PackagesTile
+              id={id}
+              key={id}
+              title={title}
+              prevPrice={prevPrice}
+              price={price}
+              list={list}
+              color={color}
+              borderColor={borderColor}
+              textColor={textColor}
+            />
+          ),
+        )}
       </div>
     </div>
   );
