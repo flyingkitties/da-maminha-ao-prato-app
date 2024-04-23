@@ -25,12 +25,6 @@ function ServicesGallery() {
             ))}
           </div>
         </div>
-        <div className="py-10">
-          <h1 className="text-center titleFont text-terciary text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
-            Pacotes
-          </h1>
-          <div></div>
-        </div>
       </div>
     </div>
   );
