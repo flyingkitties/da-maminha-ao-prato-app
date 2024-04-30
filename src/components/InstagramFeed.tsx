@@ -12,16 +12,18 @@ interface InstagramPost {
 
 export default async function InstagramFeed() {
   let instagramFeed = null;
+  let last3Posts = null;
   let error = null;
 
   try {
     const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,media_type,timestamp,permalink&access_token=${process.env.NEXT_PUBLIC_IG_TOKEN}`;
     const data = await fetch(url);
-    console.log('data', data);
+
     if (!data.ok) {
       throw new Error('Failed to fetch Instagram feed');
     }
     instagramFeed = await data.json();
+    last3Posts = instagramFeed.data.slice(0, 3);
     console.log('Instagram feed:', instagramFeed);
   } catch (err: any) {
     console.error('Error fetching Instagram feed:', err.message);
@@ -36,7 +38,7 @@ export default async function InstagramFeed() {
         <section className="w-full flex flex-col justify-center items-center">
           <h2 className="text-2xl font-semibold">Instagram Feed:</h2>
           <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {instagramFeed.data.map((post: InstagramPost) => (
+            {last3Posts.map((post: InstagramPost) => (
               <div
                 key={post.id}
                 className="relative group w-full h-[300px]"
