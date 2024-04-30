@@ -23,7 +23,9 @@ export default async function InstagramFeed() {
       throw new Error('Failed to fetch Instagram feed');
     }
     instagramFeed = await data.json();
-    last3Posts = instagramFeed.data.slice(0, 3);
+    last3Posts = instagramFeed.data
+      .filter((post: InstagramPost) => post.media_type !== 'VIDEO')
+      .slice(0, 3); // Filter out videos
     console.log('Instagram feed:', instagramFeed);
   } catch (err: any) {
     console.error('Error fetching Instagram feed:', err.message);
