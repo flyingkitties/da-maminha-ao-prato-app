@@ -42,7 +42,10 @@ body {
     @apply px-5 md:px-[5%] lg:px-[10%] 2xl:px-[14%];
   }
   .p-TextFormat {
-    @apply hyphens-auto text-justify text-sm font-light leading-loose xl:text-base 2xl:text-xl;
+    @apply hyphens-auto text-justify text-xs xs:text-sm font-light leading-loose xl:text-base 2xl:text-xl;
+  }
+  .title {
+    @apply text-lg sm:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl text-terciary;
   }
 
   /* Banner */
