@@ -43,12 +43,10 @@ export default async function InstagramFeed() {
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5 xl:gap-10">
-            {last3Posts.map((post: InstagramPost, i) => (
+            {last3Posts.map((post: InstagramPost) => (
               <div
                 key={post.id}
-                className={`relative group w-full h-auto overflow-hidden ${
-                  i === 2 && ''
-                }`}
+                className={`relative group w-full h-auto overflow-hidden`}
               >
                 <Link
                   href={post.permalink}
