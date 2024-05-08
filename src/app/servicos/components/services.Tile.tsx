@@ -42,7 +42,7 @@ function Tile({ id, image, title, priceOnline, priceHome }: Services) {
             href={`/services/${id}`}
           >
             <button className="bg-terciary/60 py-2 px-5 rounded-md text-white text-xs">
-              Mais Informações
+              Saber mais
             </button>
           </Link>
         </div>

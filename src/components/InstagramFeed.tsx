@@ -38,7 +38,7 @@ export default async function InstagramFeed() {
 
       {instagramFeed && (
         <section className="flexCenter flex-col sectionContainer">
-          <h2 className="titleFont title font-semibold my-5 md:my-10">
+          <h2 className="titleFont title mb-5 md:mb-10">
             O meu <span className="text-white bg-terciary px-1">Instagram</span>
           </h2>
 
@@ -70,6 +70,14 @@ export default async function InstagramFeed() {
               </div>
             ))}
           </div>
+          <Link
+            className="my-5"
+            href="https://www.instagram.com/damaminhaaoprato/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="buttonBrown">Ver mais</div>
+          </Link>
         </section>
       )}
     </>

@@ -5,7 +5,7 @@ import image1 from '@/../public/profile/profile-image2.png';
 function Nutricionista() {
   return (
     <div className="flexCenter sectionContainer text-darkBrown py-16">
-      <div className="grid sm:grid-cols-2 sm:py-[5%] gap-5 lg:gap-10">
+      <div className="grid sm:grid-cols-2 sm:py-[5%] gap-3 lg:gap-10">
         <div className="flexCenter">
           <Image
             alt="Ana Kellen photo"

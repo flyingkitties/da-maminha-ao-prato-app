@@ -39,13 +39,16 @@ body {
     @apply flex items-center justify-center;
   }
   .sectionContainer {
-    @apply px-5 md:px-[5%] lg:px-[10%] 2xl:px-[14%];
+    @apply px-5 md:px-[5%] lg:px-[10%] 2xl:px-[14%] py-14;
   }
   .p-TextFormat {
     @apply hyphens-auto text-justify text-xs xs:text-sm font-light leading-loose xl:text-base 2xl:text-xl;
   }
   .title {
     @apply text-lg sm:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl text-terciary;
+  }
+  .buttonBrown {
+    @apply bg-terciary text-white py-2 px-5 rounded-md text-xs md:text-sm lg:text-base;
   }
 
   /* Banner */
